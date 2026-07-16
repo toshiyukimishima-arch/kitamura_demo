@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>麻調パナマ配色ワンピース｜キタムラオンラインショップ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Firework scripts -->
+<script type="module" src="//asset.fwcdn3.com/js/module/fwn.js?business_id=FW_AIGC_lab"></script>
+<script async src="https://asset.fwscripts.com/js/ava.js?business_id=FW_AIGC_lab"></script>
+
+<style>
+  :root {
+    --brand-primary: #003562;
+    --brand-black: #000000;
+    --brand-text: #333333;
+    --brand-bg: #ffffff;
+    --brand-border: #e2ddd8;
+    --brand-muted: #767676;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Urbanist', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+    color: var(--brand-text);
+    background: var(--brand-bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  /* Header */
+  .top-bar {
+    background: var(--brand-primary);
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    padding: 6px 10px;
+    letter-spacing: 0.05em;
+  }
+
+  header.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    border-bottom: 1px solid var(--brand-border);
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 50;
+  }
+
+  .logo-wrap { display: flex; align-items: center; gap: 32px; }
+  .logo-wrap img { height: 22px; }
+
+  .main-nav { display: flex; gap: 24px; font-size: 13px; letter-spacing: 0.03em; }
+  .main-nav a { padding: 6px 0; border-bottom: 2px solid transparent; }
+  .main-nav a:hover { border-bottom-color: var(--brand-primary); }
+
+  .header-icons { display: flex; gap: 18px; align-items: center; }
+  .header-icons img { height: 18px; width: 18px; opacity: 0.75; }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 14px 32px 0;
+    font-size: 12px;
+    color: var(--brand-muted);
+  }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb span { margin: 0 6px; }
+
+  /* Product layout */
+  .product-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    padding: 24px 32px 60px;
+  }
+
+  .gallery { position: sticky; top: 90px; align-self: start; }
+  .gallery-main {
+    border: 1px solid var(--brand-border);
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background: #f7f5f3;
+    margin-bottom: 10px;
+  }
+  .gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+
+  .gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+  }
+  .gallery-thumbs img {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border: 1px solid var(--brand-border);
+    cursor: pointer;
+    background: #f7f5f3;
+  }
+  .gallery-thumbs img:hover { border-color: var(--brand-primary); }
+
+  /* Product info */
+  .product-info { padding-top: 4px; }
+  .breadcrumb-mobile { display: none; }
+
+  .product-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    letter-spacing: 0.01em;
+  }
+  .product-sku {
+    font-size: 12px;
+    color: var(--brand-muted);
+    margin-bottom: 14px;
+  }
+  .product-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 22px;
+  }
+
+  .selector-block { margin-bottom: 20px; }
+  .selector-label {
+    font-size: 12px;
+    color: var(--brand-muted);
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+  }
+  .swatch-row { display: flex; gap: 8px; }
+  .swatch {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid var(--brand-border);
+    background: #c9c9c9;
+    cursor: pointer;
+  }
+  .swatch.active { border-color: var(--brand-primary); }
+
+  .size-row { display: flex; gap: 8px; }
+  .size-btn {
+    min-width: 56px;
+    padding: 10px 14px;
+    border: 1px solid var(--brand-border);
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    background: #fff;
+  }
+  .size-btn.active { border-color: var(--brand-primary); background: var(--brand-primary); color: #fff; }
+
+  .gift-note {
+    font-size: 12px;
+    color: var(--brand-muted);
+    margin-bottom: 18px;
+  }
+
+  .cta-row { display: flex; gap: 10px; margin-bottom: 6px; }
+  .btn-cart {
+    flex: 1;
+    background: var(--brand-primary);
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    text-align: center;
+  }
+  .btn-cart:hover { background: #002744; }
+  .btn-wishlist {
+    width: 52px;
+    border: 1px solid var(--brand-border);
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .order-note {
+    font-size: 11px;
+    color: var(--brand-muted);
+    margin-bottom: 28px;
+  }
+
+  /* Firework module boxes */
+  .fw-module-box {
+    border: 1.5px solid var(--brand-border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .fw-module-label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--brand-muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .perks-block {
+    border-top: 1px solid var(--brand-border);
+    border-bottom: 1px solid var(--brand-border);
+    padding: 16px 0;
+    margin-bottom: 24px;
+    font-size: 12px;
+    color: var(--brand-muted);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .perks-block div { display: flex; gap: 8px; align-items: center; }
+
+  /* Tabs */
+  .tabs-section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px 60px;
+  }
+  .tab-headers {
+    display: flex;
+    gap: 32px;
+    border-bottom: 1px solid var(--brand-border);
+    overflow-x: auto;
+    margin-bottom: 28px;
+  }
+  .tab-header {
+    padding: 12px 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: var(--brand-muted);
+  }
+  .tab-header.active { color: var(--brand-primary); border-bottom-color: var(--brand-primary); font-weight: 600; }
+  .tab-content { display: none; font-size: 13px; line-height: 1.9; color: #444; max-width: 760px; }
+  .tab-content.active { display: block; }
+  .spec-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .spec-table th, .spec-table td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--brand-border); }
+  .spec-table th { width: 140px; color: var(--brand-muted); font-weight: 500; }
+
+  /* Related */
+  .related-section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px 70px;
+  }
+  .related-title { font-size: 16px; font-weight: 600; margin-bottom: 20px; }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .related-card img {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    background: #f7f5f3;
+    margin-bottom: 10px;
+  }
+  .related-card .r-title { font-size: 13px; margin-bottom: 4px; }
+  .related-card .r-price { font-size: 13px; font-weight: 600; }
+  .related-card .r-price .strike { text-decoration: line-through; color: var(--brand-muted); font-weight: 400; margin-right: 6px; }
+
+  footer {
+    background: #f5f3f1;
+    border-top: 1px solid var(--brand-border);
+    padding: 40px 32px;
+    font-size: 12px;
+    color: var(--brand-muted);
+    text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    header.site-header { padding: 12px 16px; }
+    .main-nav { display: none; }
+    .product-wrap { grid-template-columns: 1fr; padding: 16px 16px 40px; gap: 24px; }
+    .gallery { position: static; }
+    .breadcrumb { padding: 10px 16px 0; }
+    .tabs-section, .related-section { padding-left: 16px; padding-right: 16px; }
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+    .tab-headers { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">SUMMER SALE 開催中｜対象アイテム最大30%OFF</div>
+
+<header class="site-header">
+  <div class="logo-wrap">
+    <img src="https://www.motomachi-kitamura.com/Contents/ImagesPkg/custum_cmm/logo.svg" alt="KITAMURA"
+      onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2222%22><text x=%220%22 y=%2217%22 font-family=%22Urbanist%22 font-size=%2218%22 letter-spacing=%222%22 fill=%22%23003562%22>KITAMURA</text></svg>'">
+    <nav class="main-nav">
+      <a href="#">レディース</a>
+      <a href="#">メンズ</a>
+      <a href="#">その他</a>
+      <a href="#">お知らせ</a>
+      <a href="#">キャンペーン・特集</a>
+      <a href="#">ショップリスト</a>
+    </nav>
+  </div>
+  <div class="header-icons">
+    <img src="https://www.motomachi-kitamura.com/Contents/ImagesPkg/custum_cmm/ic_login.svg" alt="login" onerror="this.style.display='none'">
+    <img src="https://www.motomachi-kitamura.com/Contents/ImagesPkg/custum_cmm/ic_mailmagazine.svg" alt="mail" onerror="this.style.display='none'">
+    <img src="https://www.motomachi-kitamura.com/Contents/ImagesPkg/custum_cmm/ic_favorite.svg" alt="favorite" onerror="this.style.display='none'">
+    <img src="https://www.motomachi-kitamura.com/Contents/ImagesPkg/custum_cmm/ic_cart.svg" alt="cart" onerror="this.style.display='none'">
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <a href="#">TOP</a><span>&gt;</span><a href="#">レディースウェア</a><span>&gt;</span><a href="#">ワンピース</a>
+</div>
+
+<div class="product-wrap">
+  <div class="gallery">
+    <div class="gallery-main">
+      <img id="mainImg" src="https://www.motomachi-kitamura.com/Contents/ProductImages/0/kh0867_82136_LL.jpg" alt="麻調パナマ配色ワンピース"
+        onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22800%22><rect width=%22600%22 height=%22800%22 fill=%22%23f7f5f3%22/><path d=%22M300 180 L360 260 L340 280 L320 260 L320 620 L280 620 L280 260 L260 280 L240 260 Z%22 fill=%22%23d8d3ce%22/></svg>'">
+    </div>
+    <div class="gallery-thumbs">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductImages/0/kh0867_82136_LL.jpg" onclick="document.getElementById('mainImg').src=this.src" onerror="this.style.visibility='hidden'">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductSubImages/0/kh0867_82136_sub01_LL.jpg" onclick="document.getElementById('mainImg').src=this.src" onerror="this.style.visibility='hidden'">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductSubImages/0/kh0867_82136_sub02_LL.jpg" onclick="document.getElementById('mainImg').src=this.src" onerror="this.style.visibility='hidden'">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductSubImages/0/kh0867_82136_sub03_LL.jpg" onclick="document.getElementById('mainImg').src=this.src" onerror="this.style.visibility='hidden'">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductSubImages/0/kh0867_82136_sub04_LL.jpg" onclick="document.getElementById('mainImg').src=this.src" onerror="this.style.visibility='hidden'">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductSubImages/0/kh0867_82136_sub05_LL.jpg" onclick="document.getElementById('mainImg').src=this.src" onerror="this.style.visibility='hidden'">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h1 class="product-title">麻調パナマ配色ワンピース</h1>
+    <div class="product-sku">品番：KH0867 82136</div>
+    <div class="product-price">38,000円 (税込)</div>
+
+    <div class="selector-block">
+      <div class="selector-label">カラー：ライトグレー</div>
+      <div class="swatch-row">
+        <div class="swatch active" style="background:#c9c5be;"></div>
+      </div>
+    </div>
+
+    <div class="selector-block">
+      <div class="selector-label">サイズ</div>
+      <div class="size-row">
+        <div class="size-btn active">S(36)</div>
+        <div class="size-btn">M(38)</div>
+      </div>
+    </div>
+
+    <div class="gift-note">※こちらの商品のギフト包装は承れません</div>
+
+    <div class="cta-row">
+      <button class="btn-cart">カートに入れる</button>
+      <button class="btn-wishlist">♡</button>
+    </div>
+    <div class="order-note">※ご注文完了まで商品は確保されておりません。</div>
+
+    <!-- Firework Video Carousel -->
+    <div class="fw-module-box">
+      <div class="fw-module-label">Style Videos</div>
+      <fw-embed-feed
+        style="--fw-font-family: Urbanist; --fw-thumbnail-font-size: 12px;"
+        channel="aigc_jp"
+        mode="row"
+        player_placement="bottom-right"
+        playlist="gXPxjV"
+        size="medium">
+      </fw-embed-feed>
+    </div>
+
+    <div class="perks-block">
+      <div>🚚 全国一律送料無料（一部地域を除く）</div>
+      <div>↩️ 商品到着後8日以内であれば返品・交換が可能です</div>
+      <div>🎁 ラッピングサービス承ります（一部対象外商品あり）</div>
+    </div>
+  </div>
+</div>
+
+<div class="tabs-section">
+  <div class="tab-headers">
+    <div class="tab-header active" onclick="switchTab(event,'desc')">商品説明</div>
+    <div class="tab-header" onclick="switchTab(event,'spec')">仕様・素材</div>
+    <div class="tab-header" onclick="switchTab(event,'size')">サイズガイド</div>
+    <div class="tab-header" onclick="switchTab(event,'review')">レビュー</div>
+  </div>
+
+  <div class="tab-content active" id="tab-desc">
+    <p>首まわりと袖口の配色デザインがアクセントの半袖ワンピース。リネンライクな素材感がナチュラルで涼しげな印象です。軽量な着心地は汗ばむ季節に嬉しいポイント。配色の切り替え部分には異素材の波型ブレードをあしらい、シンプルながらも細部までこだわったデザインに仕上げました。袖は腕に沿う細めのシルエットで、カーディガンなどの羽織りものもスムーズに着用できます。ウエストから裾にかけてはＡラインシルエットで、丈は膝が隠れる上品な丈感。きちんと感のあるシンプルなデザインで、夏のオケージョンシーンにもおすすめです。両サイドにポケット付き。</p>
+    <p>（モデル身長：１６６ｃｍ　着用サイズ：Ｓ（３６））</p>
+    <p><strong>★素材ポイント</strong><br>
+    麻のようなナチュラル感とドライな風合いのリネンライク素材。通気性と透湿性に優れ、程よいハリ感があり、シワになりにくいのが特長です。裏地には吸汗速乾性に優れたサップ裏地を使用。汗をかいてもベタつかず、快適な着心地が続きます。</p>
+  </div>
+
+  <div class="tab-content" id="tab-spec">
+    <table class="spec-table">
+      <tr><th>素材</th><td>ポリエステル100%（別布 ポリエステル100%）／裏地 ポリエステル100%</td></tr>
+      <tr><th>生産国</th><td>日本</td></tr>
+      <tr><th>カラー</th><td>ライトグレー</td></tr>
+    </table>
+  </div>
+
+  <div class="tab-content" id="tab-size">
+    <table class="spec-table">
+      <tr><th></th><th>着丈</th><th>バスト</th><th>ウエスト</th><th>肩幅</th><th>袖丈</th></tr>
+      <tr><th>S</th><td>100.5</td><td>90.5</td><td>73</td><td>37</td><td>20cm</td></tr>
+      <tr><th>M</th><td>102</td><td>93.5</td><td>76</td><td>38</td><td>20.5cm</td></tr>
+    </table>
+  </div>
+
+  <div class="tab-content" id="tab-review">
+    <p style="color: var(--brand-muted);">まだレビューがありません。</p>
+  </div>
+</div>
+
+<div class="related-section">
+  <div class="related-title">このアイテムを見た人は、こんなアイテムを見ています</div>
+  <div class="related-grid">
+    <div class="related-card">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductImages/0/kh0867_82136_sub01_LL.jpg" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22400%22><rect width=%22300%22 height=%22400%22 fill=%22%23f7f5f3%22/></svg>'">
+      <div class="r-title">オリジナルジャガードワンピース</div>
+      <div class="r-price"><span class="strike">48,000円</span>33,600円</div>
+    </div>
+    <div class="related-card">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductImages/0/kh0867_82136_sub02_LL.jpg" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22400%22><rect width=%22300%22 height=%22400%22 fill=%22%23f7f5f3%22/></svg>'">
+      <div class="r-title">レース付き五分袖セミフレアワンピース</div>
+      <div class="r-price">40,000円</div>
+    </div>
+    <div class="related-card">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductImages/0/kh0867_82136_sub03_LL.jpg" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22400%22><rect width=%22300%22 height=%22400%22 fill=%22%23f7f5f3%22/></svg>'">
+      <div class="r-title">セミショルダーバッグ</div>
+      <div class="r-price">58,000円</div>
+    </div>
+    <div class="related-card">
+      <img src="https://www.motomachi-kitamura.com/Contents/ProductImages/0/kh0867_82136_sub04_LL.jpg" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22400%22><rect width=%22300%22 height=%22400%22 fill=%22%23f7f5f3%22/></svg>'">
+      <div class="r-title">麻調パナマ配色ワンピース（別カラー）</div>
+      <div class="r-price">38,000円</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © KITAMURA ONLINE SHOP — Demo page for Firework presentation purposes only.
+</footer>
+
+<script>
+function switchTab(evt, id) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-header').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  evt.currentTarget.classList.add('active');
+}
+</script>
+
+</body>
+</html>
